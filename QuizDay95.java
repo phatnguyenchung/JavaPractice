@@ -1,14 +1,14 @@
 public class QuizDay95 {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4, 5};
+        int[] numbs = {1, 2, 3, 4, 5};
         int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
+        for (int i = 0; i < numbs.length; i++) {
+            sum += numbs[i];
             if (i % 2 == 0) {
                 continue;
             }
-            for (int j = 0; j < nums.length; j++) {
-                sum += nums[j];
+            for (int j = 0; j < numbs.length; j++) {
+                sum += numbs[j];
                 if (j % 2 != 0) {
                     break;
                 }
