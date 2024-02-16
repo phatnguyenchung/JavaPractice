@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class NPE {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String _text;
         //Fix NPE
         Scanner scanner = new Scanner(System.in);
