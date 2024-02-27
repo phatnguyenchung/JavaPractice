@@ -31,11 +31,10 @@ public class HashSetJava {
             }
         }
         System.out.println();
-        for(int num : list1){
-            if(integers.remove(num)){
+        for (int num : list1) {
+            if (integers.remove(num)) {
                 System.out.print(num + " ");
             }
         }
     }
-
 }
