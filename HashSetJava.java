@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class HashSetJava {
     public static void main(String[] args) {
@@ -21,6 +22,19 @@ public class HashSetJava {
         List<Integer> newList = new ArrayList<>(hashSet);
         for (Integer ob : newList) {
             System.out.print(ob + " ");
+        }
+        System.out.println();
+        Set<Integer> integers = new HashSet<>();
+        for (int num : list1) {
+            if (!integers.add(num)) {
+                System.out.print(num + " ");
+            }
+        }
+        System.out.println();
+        for(int num : list1){
+            if(integers.remove(num)){
+                System.out.print(num + " ");
+            }
         }
     }
 
