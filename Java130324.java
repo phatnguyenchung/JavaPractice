@@ -6,5 +6,8 @@ public class Java130324 {
 
         }
         System.out.println(A[1]);
+
+        System.out.println("good day");
+        return;
     }
 }
