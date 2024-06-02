@@ -1,6 +1,6 @@
 public class Challenge {
     static {
-        initalize();
+        initialize();
     }
 
     private static int sum;
@@ -10,7 +10,7 @@ public class Challenge {
         return sum;
     }
 
-    private static void initalize() {
+    private static void initialize() {
         sum = 10;
     }
 
