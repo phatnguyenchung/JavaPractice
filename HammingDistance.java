@@ -1,12 +1,10 @@
 public class HammingDistance {
     public static int hammingDistance(int x, int y) {
-        int ans = x ^ y;
-        int pos = 0;
-        while (ans != 0) {
-            ans = ans & (ans - 1);
-            pos++;
+        int count = 0;
+        for (int xor = x ^ y; xor != 0; xor &= (xor - 1)) {
+            count++;
         }
-        return pos;
+        return count;
     }
 
     public static void main(String[] args) {
