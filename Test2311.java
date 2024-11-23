@@ -6,12 +6,10 @@ public class Test2311 {
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("Input n:");
-            n = scanner.nextInt();
-        } while (n < 0);
+        } while ((n = scanner.nextInt()) < 0);
         System.out.println("Output:");
         for (int i = 0; i <= n; i++) {
-            String result = (i % 2 == 0) ? "even" : "odd";
-            System.out.println(i + ":" + result);
+            System.out.printf("%d: %s%n", i, (i % 2 == 0) ? "even" : "odd");
         }
         scanner.close();
     }
