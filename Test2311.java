@@ -6,7 +6,7 @@ public class Test2311 {
         int n;
         do {
             System.out.print("Input n: ");
-            while(!scanner.hasNextInt()){
+            while (!scanner.hasNextInt()) {
                 System.out.println("Invalid number! Please try again");
                 System.out.print("Input n: ");
                 scanner.next();
