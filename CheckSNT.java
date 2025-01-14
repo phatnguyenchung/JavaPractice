@@ -3,9 +3,11 @@ import java.util.Scanner;
 public class CheckSNT {
     public static void main(String[] args) {
         int n;
-        System.out.println("input n:");
-        Scanner scanner = new Scanner(System.in);
-        n = scanner.nextInt();
+        do {
+            System.out.println("input n:");
+            Scanner scanner = new Scanner(System.in);
+            n = scanner.nextInt();
+        } while (n <= 0);
         for (int i = 1; i <= n; i++) {
             if (prime(i) == 1) {
                 System.out.print(i + " ");
