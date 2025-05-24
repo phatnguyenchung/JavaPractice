@@ -30,16 +30,15 @@ public class MakeHeart extends JPanel {
         int arcHeight = height;
 
         int leftArcX = centerX - arcWidth;
-        int rightArcX = centerX;
         int arcY = centerY - arcHeight / 2;
 
         // Draw the two top arcs (heart lobes)
         graphic2D.fillArc(leftArcX, arcY, arcWidth, arcHeight, 0, 180);
-        graphic2D.fillArc(rightArcX, arcY, arcWidth, arcHeight, 0, 180);
+        graphic2D.fillArc(centerX, arcY, arcWidth, arcHeight, 0, 180);
 
         Polygon triangle = new Polygon();
         triangle.addPoint(leftArcX, arcY + arcHeight / 2);
-        triangle.addPoint(rightArcX + arcWidth, arcY + arcHeight / 2);
+        triangle.addPoint(centerX + arcWidth, arcY + arcHeight / 2);
         triangle.addPoint(centerX, centerY + arcHeight);
         graphic2D.fillPolygon(triangle);
 
