@@ -3,13 +3,13 @@ import java.util.Arrays;
 public class MinimumMovesToEqualArrayElementsII {
     public int minMoves2(int[] nums) {
         int n = nums.length;
-        int ans = 0;
+        int result = 0;
         Arrays.sort(nums);
         int median = nums[n / 2]; // Use the median (middle element after sorting)
         for (int num : nums) {
-            ans += Math.abs(num - median); // Sum of absolute differences
+            result += Math.abs(num - median); // Sum of absolute differences
         }
-        return ans;
+        return result;
     }
 
     public static void main(String[] args) {
